@@ -1,11 +1,12 @@
 var React = require('react');
 var DefaultLayout = require('./layouts/default');
+var ChatRoom = require('./chatRoom')
 
 var HelloMessage = React.createClass({
   render: function() {
     return (
       <DefaultLayout title={this.props.title}>
-        <div>Hello {this.props.qp}</div>
+        <ChatRoom ></ChatRoom>
       </DefaultLayout>
     );
   }
